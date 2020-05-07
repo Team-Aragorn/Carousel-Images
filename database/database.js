@@ -39,25 +39,4 @@ const getGameForTopCarousel = (callback) => {
   });
 };
 
-
-const getGamesForRecommended = (callback) => {
-  ImageData.countDocuments().exec((err, count) => {
-    if (err) {
-      console.log('Error Getting Carousel Images (count)', err);
-    } else {
-      const random = Math.floor(Math.random() * count);
-
-      ImageData.findOne().skip(random).exec((error, result) => {
-        if (error) {
-          console.log('Error Getting Carousel Images (findOne)', error);
-        } else {
-          callback(null, result);
-        }
-      });
-    }
-  });
-};
-
-
-module.exports.getGamesForRecommended = getGamesForRecommended;
 module.exports.getGameForTopCarousel = getGameForTopCarousel;
