@@ -22,11 +22,14 @@ const ProductView = (props) => {
     });
   };
 
+  let key = 0;
+
   return (
     <div className="productCarousel">
       <div className="imageBar">
         {game.images.map((image) => (
-          <input type="image" className="image" key={image} src={image} alt="product images" style={mainImage === image ? { borderBottom: '3px solid #DA3625' } : null} onClick={(event) => { setMainImage(event.target.src); }} />
+          // eslint-disable-next-line no-plusplus
+          <input type="image" className="image" key={key++} src={image} alt="product images" style={mainImage === image ? { borderBottom: '3px solid #DA3625' } : null} onClick={(event) => { setMainImage(event.target.src); }} />
         ))}
       </div>
       <div className="mainImage">
