@@ -4,11 +4,11 @@ const db = require('../database/database.js');
 const app = express();
 const PORT = 3003;
 
-app.use(express.static(`${__dirname}/../public`));
+app.use('/games/:gameId', express.static(`${__dirname}/../public`));
 app.use(express.json());
 
-app.get('/api/game', (req, res) => {
-  db.getGameForTopCarousel((err, result) => {
+app.get('/carousel/:gameId', (req, res) => {
+  db.getGameForTopCarousel(req.params.gameId, (err, result) => {
     if (err) {
       res.status(404).end();
     } else {

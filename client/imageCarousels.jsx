@@ -16,7 +16,9 @@ class ImageCarousel extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/api/game')
+    const gameId = window.location.pathname.match(/\/games\/(\d+)/);
+    console.log(gameId);
+    axios.get(`/carousel/${gameId[1]}`)
       .then((data) => { this.updateGame(data); });
   }
 
@@ -35,4 +37,4 @@ class ImageCarousel extends React.Component {
   }
 }
 
-ReactDOM.render(<ImageCarousel />, document.getElementById('app'));
+ReactDOM.render(<ImageCarousel />, document.getElementById('carousel'));
