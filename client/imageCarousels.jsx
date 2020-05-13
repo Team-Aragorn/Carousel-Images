@@ -37,4 +37,4 @@ class ImageCarousel extends React.Component {
   }
 }
 
-ReactDOM.render(<ImageCarousel />, document.getElementById('app'));
+ReactDOM.render(<ImageCarousel />, document.getElementById('carousel'));
