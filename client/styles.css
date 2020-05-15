@@ -20,14 +20,14 @@
   order: 1;
 }
 
-.image {
+.imageCarousel {
   width: 62%;
   padding: 5px;
   margin: 10px;
   border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
-.image:hover {
+.imageCarousel:hover {
   border-color: #DA3625;
   ;
 }
