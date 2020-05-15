@@ -30,7 +30,7 @@ const ProductView = (props) => {
       <div className={styles.imageBar}>
         {game.images.map((image) => (
           // eslint-disable-next-line no-plusplus
-          <input type="image" className={styles.image} key={key++} src={image} alt="product images" style={mainImage === image ? { borderBottom: '3px solid #DA3625' } : null} onClick={(event) => { setMainImage(event.target.src); }} />
+          <input type="image" className={styles.imageCarousel} key={key++} src={image} alt="product images" style={mainImage === image ? { borderBottom: '3px solid #DA3625' } : null} onClick={(event) => { setMainImage(event.target.src); }} />
         ))}
       </div>
       <div className={styles.mainImage}>
