@@ -19,7 +19,7 @@ const ProductView = (props) => {
 
   const imageMouseOver = (event) => {
     setImageZoom({
-      transform: 'scale(1.5)',
+      transform: 'scale(1.5) translate(8%, 2%)',
       transformOrigin: `${event.pageX}px ${event.pageY}px`,
     });
   };
@@ -35,7 +35,7 @@ const ProductView = (props) => {
         ))}
       </div>
       <div className={styles.mainImage} onMouseOut={() => setImageZoom(null)} onMouseMove={(event) => { imageMouseOver(event); }}>
-        <img src={mainImage || game.images[0]} style={imageZoom} alt="main" />
+        <img className={styles.theImage} src={mainImage || game.images[0]} style={imageZoom} alt="main" />
       </div>
     </div>
   );

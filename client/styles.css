@@ -6,10 +6,8 @@
 
 .mainImage {
   overflow: hidden;
-  order: 2;
   align-self: center;
 }
-
 
 .imageBar {
   display: flex;
@@ -17,7 +15,6 @@
   min-width: 77px;
   flex-wrap: nowrap;
   width: 10%;
-  order: 1;
 }
 
 .imageCarousel {
