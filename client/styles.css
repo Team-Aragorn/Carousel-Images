@@ -1,7 +1,7 @@
 .productCarousel {
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  width: fit-content;
 }
 
 .mainImage {
