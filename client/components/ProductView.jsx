@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
@@ -18,7 +19,7 @@ const ProductView = (props) => {
 
   const imageMouseOver = (event) => {
     setImageZoom({
-      transform: 'scale(1.4)',
+      transform: 'scale(1.5)',
       transformOrigin: `${event.pageX}px ${event.pageY}px`,
     });
   };
@@ -33,8 +34,8 @@ const ProductView = (props) => {
           <input type="image" className={styles.imageCarousel} key={key++} src={image} alt="product images" style={mainImage === image ? { borderBottom: '3px solid #DA3625' } : null} onClick={(event) => { setMainImage(event.target.src); }} />
         ))}
       </div>
-      <div className={styles.mainImage}>
-        <img src={mainImage || game.images[0]} style={imageZoom} onMouseMove={(event) => { imageMouseOver(event); }} onMouseOut={() => setImageZoom(null)} alt="main" />
+      <div className={styles.mainImage} onMouseOut={() => setImageZoom(null)} onMouseMove={(event) => { imageMouseOver(event); }}>
+        <img src={mainImage || game.images[0]} style={imageZoom} alt="main" />
       </div>
     </div>
   );
