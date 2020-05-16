@@ -19,7 +19,7 @@ const ProductView = (props) => {
 
   const imageMouseOver = (event) => {
     setImageZoom({
-      transform: 'scale(1.5) translate(25%, 20%)',
+      transform: 'scale(1.5) translate(28%, 20%)',
       transformOrigin: `${event.pageX}px ${event.pageY}px`,
     });
   };
