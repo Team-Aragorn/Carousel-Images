@@ -3,6 +3,10 @@
 
 ![](Image-Carousel.gif)
 
+## Webpage Demo
+
+![](GameStart-Demo.gif)
+
 ## Requirements
 - Node 12.0.0
 - MongoDB 4.2.6
