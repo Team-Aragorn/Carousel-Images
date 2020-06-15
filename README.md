@@ -1,5 +1,5 @@
 # Carousel-Images
->Product image carousel that displays item images. Has 1.4x zoom functionality on hover. Part of the GameGo ecommerce webpage.
+>Product image carousel that displays item images. Has 1.4x zoom functionality on hover. Part of the GameStart ecommerce webpage.
 
 ![](Image-Carousel.gif)
 
