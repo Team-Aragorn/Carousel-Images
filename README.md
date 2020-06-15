@@ -1,5 +1,7 @@
 # Carousel-Images
->Image Carousel at the top of the page
+>Product image carousel that displays item images. Has 1.4x zoom functionality on hover. Part of the GameGo ecommerce webpage.
+
+
 
 ## Requirements
 - Node 12.0.0
